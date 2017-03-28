@@ -1,0 +1,264 @@
+\documentclass{article}
+
+\usepackage[top=2cm, bottom=2cm, left=3cm, right=2cm]{geometry}
+\usepackage{setspace}
+\usepackage[portuguese]{babel}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+\begin{spacing}{1.5}
+
+% capa
+\begin{titlepage} %iniciando a "capa"
+\begin{center} %centralizar o texto abaixo
+{\large Universidade Federal de Santa Catarina}\\[0.2cm] %0,2cm é a distância entre o texto dessa linha e o texto da próxima
+{\large Departamento de Engenharia Mec\^anica}\\[0.2cm]
+{\large Curso de Gradua\c{c}\~ao em Engenharia Mec\^anica}\\[0.2cm]
+{\large  DISCIPLINA EMC 5412 - TRANSFER\^ENCIA DE CALOR E MEC\^ANICA DOS FLUIDOS COMPUTACIONAL}\\[7.6cm]
+{\bf \huge Trabalho 2 - Condu\c{c}\~ao n\~ao linear}\\[5.3cm] % o comando \bf deixa o texto entre chaves em negrito. O comando \huge deixa o texto enorme
+
+{\large Aluno(a): Gusttav Bauermann Lang}\\[0.4cm] % o comando \large deixa o texto grande
+{\large Professor: Ant\'onio F\'abio Carvalho da Silva}\\[0.4cm]
+{\large Matr\'icula: 13200534}
+\end{center} %término do comando centralizar
+
+\vspace{\fill}
+\begin{center}
+{\large Florian\'opolis}\\[0.1cm]
+{\large 31 de Mar\c{c}o de 2017}
+\end{center}
+\end{titlepage} %término da "capa"
+
+\section{Introdu\c{c}\~ao}
+
+A distribuição de temperatura em uma parede pode ser determinada através da resolução da equação do calor. Para meios isotrópicos e em uma situação de regime permanente, a equação do calor em uma parede plana pode ser determinada pela seguinte equação:
+\\
+$y=3\sin x$
+
+\end{spacing}
+
+
+
+
+this is a short document to illustrate the basic use of \LaTeX
+
+
+\noindent $y=3\sin x$
+
+$x^{2+\alpha}_{n+1}$
+
+%comentarios
+
+quero mostrar o porcento (\%) e também o \$
+
+\textit{Italic type}
+\textrm{Roman}
+\textsf{Sans serif}
+
+\textup{Don't \textbf{overuse} types}
+
+como dar \emph{enfase} em uma palavra 
+
+Environments are portions of the document that we want \LaTeX $\;$to treat differently form the main body:
+
+\begin{itemize}
+	\item Item 1
+	\item Item 2
+	\item Item3
+
+\end{itemize}
+
+\begin{enumerate}
+	\item primeiro
+	\item segundo
+	\item terceiro
+
+\end{enumerate}
+
+\begin{center}
+Para centralizar texto\\
+pular linha sem espaçar o código
+\end{center}
+
+Como Fazer tabelas\\
+\\
+\begin{tabular}{lrc}
+Nome & Idade & Nota\\
+\hline
+Gusttav & 22 & 10\\
+Giga & 24 & 10\\
+Sergio & 25 & 10
+\end{tabular}
+\\
+O \{lrc\} faz a primeira coluna se alinhar a esquerda, a segundo na direita e a terceira no centro
+
+\begin{center}
+\begin{tabular}{|l| |r|c|}
+\hline
+Nome & Idade & Nota\\
+\hline
+Gusttav & 22 & 10\\
+Giga & 24 & 10\\
+Sergio & 25 & 10\\
+\hline
+
+\end{tabular}
+\end{center}
+
+\begin{table} [h] %esse h faz aparecer o caption da tabela
+\begin{center}
+\begin{tabular}{|l| |r|r|}
+\hline
+& \multicolumn{2}{c|}{Numeros}\\
+\cline{2-3}
+Nome & Idade & Nota\\
+\hline
+Gusttav & 22 & 10\\
+Giga & 24 & 10\\
+Sergio & 25 & 10\\
+\hline
+
+\end{tabular}
+\caption{Tabela nome}\label{tabela}
+\end{center}
+\end{table}
+
+
+\begin{verbatim}
+mostrar tudo o que eu quiser nesse espaço, como $ % !, sem precisar usar o \$
+\end{verbatim}
+
+
+Espaçamento entre linhas
+\bigskip
+
+ou
+\medskip
+
+ou
+\smallskip
+
+sao as opcoes para espaçamento vertilcal
+
+\vspace{2.2in} para o tamanho exato que queres deixar %pode ser também {2.2cm} pode usar números negativos
+
+Parara utilizar espacamento \hspace{1cm} vertical, ou
+
+pode ser \hspace{\fill} assim
+\vspace{\fill}
+
+
+\begin{center}
+\textbf CAPITULO 3 
+\end{center}
+
+Alguns símbolos:
+
+$\not<, \not|$
+
+\ldots eh $\not=$ de ... e tbm de $\cdots$\\
+$\alpha,   \phi,   \theta $
+
+$\cos$ ou cos? $\rightarrow$
+\[
+	x = \frac{i+y}{1+2z^2} + \sqrt{5} \;   para espaco 
+\]
+
+
+
+$S_N = \sum_{j=1}^N a_j  $
+
+\[
+	S_N = \sum_{j=1}^N a_j  
+\]
+
+\[
+	\int_{x=0}^\infty e^{-x^2} dx
+\]
+
+
+
+\[
+\frac{1}{2} < \sqrt[n]{
+\left\{
+\frac{1\cdot3\cdots(2n-1)}
+{2\cdot4\cdots2n}\right\}} <1.
+\]
+
+
+\[
+\frac{1}{2} < \sqrt[n]{
+\{
+\frac{1\cdot3\cdots(2n-1)}
+{2\cdot4\cdots2n\}}} <1.
+\]
+
+
+
+
+\[
+A =
+\left[
+\begin{array}{ccc}
+1& 1 &1\\
+x&y&z\\
+x^2&y^2&z^2
+\end{array}
+\right], \; 
+\mathbf{u} =
+\left[
+\begin{array}{c}
+x \\ y \\ z
+\end{array}
+\right]
+\]
+
+
+
+\newcommand{\Dtn}{\Delta t_n}
+Para nao ser tao chato digitar alguns comandos (muito extensos), eh possivel abreviar dessa maneira.\\
+$\Dtn := t_{n+1} - t_n$
+
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
